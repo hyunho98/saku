@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "saku",
   "private": true,
   "scripts": {
@@ -7,3 +8,9 @@
     "deploy-commands": "pnpm --filter bot deploy-commands"
   }
 }
+=======
+  "dependencies": {
+    "@types/react": "^19.2.14"
+  }
+}
+>>>>>>> f6ae04a (added optimizations)
