@@ -32,5 +32,17 @@ module.exports = {
 
       return phrases[Math.floor(Math.random() * phrases.length)];
     }
+
+    // Handle responses
+    const RIGGED_USER_ID = "109101024282685440"; // for Katie. Make it a 70% chance she'll get this quote
+    const RIGGED_PHRASE = "I'm just eating fried chicken";
+    const result =
+      interaction.user.id === RIGGED_USER_ID && Math.random() < 0.7
+        ? RIGGED_PHRASE
+        : randomPhrase();
+
+    interaction.reply({
+      content: result,
+    });
   },
 };
